@@ -3,8 +3,11 @@ import { Text, View,AsyncStorage,StyleSheet,Image,ImageBackground,Dimensions,Tou
 import FastImage from 'react-native-fast-image'
 import {databaseOptions,createMealDatabase} from '../realm/allSchema'
 import {imageMenu1,imageIcon} from '../realm/image'
+import codePush from "react-native-code-push";
+
 var SoundPlayer = require('react-native-sound');
 var song = null;
+
 const {width,height} = Dimensions.get('window')
 const images = imageMenu1;
   const titles={
