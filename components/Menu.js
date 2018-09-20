@@ -114,6 +114,10 @@ export class Menu extends Component {
   }
   
   async setLanguage(s){
+        codePush.sync({
+        updateDialog: true,
+        installMode: codePush.InstallMode.IMMEDIATE
+        });
         this.setState({lang:s});
         if(this.state.lang=="VN"){
         this.setState({title1:titles["1a"]});
